@@ -15,6 +15,12 @@
         "singleAttributePerLine": true,
         "htmlWhitespaceSensitivity": "ignore"
       }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "parser": "scss"
+      }
     }
   ]
 }

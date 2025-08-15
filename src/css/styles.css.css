@@ -1,0 +1,18 @@
+/* Error: There is no module with the namespace "variables".
+ *   ,
+ * 2 |   background: variables.$card-bg;
+ *   |               ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\scss\_card.scss 2:15  @use
+ *   src\scss\main.scss 3:1    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "variables".\a   \2577 \a 2 \2502    background: variables.$card-bg;\a   \2502                ^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\_card.scss 2:15  @use\a   src\\scss\\main.scss 3:1    root stylesheet';
+}

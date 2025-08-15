@@ -1,0 +1,104 @@
+@use 'variables';
+
+.card {
+  background: variables.$card-bg;
+  border-radius: variables.$card-radius;
+  overflow: hidden;
+  box-shadow: variables.$card-shadow;
+  transition: all 0.3s ease;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: variables.$card-hover-shadow;
+
+    .card__image {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image-container {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+
+    img {
+      max-height: 180px;
+      max-width: 90%;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .card__title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .card__buy {
+      display: inline-block;
+      background: variables.$buy-gradient;
+      color: white;
+      text-align: center;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      margin-top: auto;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+
+      &:hover {
+        background: variables.$buy-gradient-hover;
+        transform: translateY(-3px);
+        box-shadow: 0 7px 20px rgba(37, 117, 252, 0.4);
+      }
+    }
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .products {
+    gap: 20px;
+  }
+
+  .card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

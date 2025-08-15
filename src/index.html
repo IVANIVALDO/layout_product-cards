@@ -1,18 +1,76 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Product cards</title>
-    <link
-      rel="stylesheet"
-      href="./styles/index.scss"
-    />
-  </head>
-  <body>
-    <h1>Product cards</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartões de Produtos Apple</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Produtos Apple em Destaque</h1>
+
+    <section class="products">
+
+      <!-- Produto 1 - iMac -->
+      <article class="card" data-qa="card">
+        <div class="card__image-container">
+          <img class="card__image" src="images/imac.jpeg" alt="iMac Pro 27">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">iMac Pro 27"</h3>
+          <div class="stars">
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star"></span>
+            <span class="stars__star"></span>
+          </div>
+          <a href="#" class="card__buy" data-qa="hover">COMPRAR</a>
+        </div>
+      </article>
+
+      <!-- Produto 3 - iPad Pro -->
+      <article class="card" data-qa="card">
+        <div class="card__image-container">
+          <img class="card__image" src="images/imac.jpeg" alt="iPad Pro">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">iPad Pro 12.9"</h3>
+          <div class="stars">
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star"></span>
+          </div>
+          <a href="#" class="card__buy" data-qa="hover">COMPRAR</a>
+        </div>
+      </article>
+
+      <!-- Produto 2 - MacBook Pro -->
+      <article class="card" data-qa="card">
+        <div class="card__image-container">
+          <img class="card__image" src="images/imac.jpeg" alt="MacBook Pro">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">MacBook Pro M2</h3>
+          <div class="stars">
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+            <span class="stars__star stars--active"></span>
+          </div>
+          <a href="#" class="card__buy" data-qa="hover">COMPRAR</a>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

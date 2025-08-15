@@ -1,0 +1,18 @@
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  &__star {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/star.svg'); // estrela vazia
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 3px;
+
+    &.stars--active {
+      background-image: url('../images/star-active.svg'); // estrela amarela
+    }
+  }
+}
